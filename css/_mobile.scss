@@ -1,0 +1,281 @@
+/* TABLET */
+@media only screen and (max-width: 767px) {
+	.wrapper{
+		margin-top:45px;
+		width:100%;
+	}
+	
+	.square{
+		width:100%;
+		height:28%;
+		float:left;
+		position:relative;
+	}
+	#about{
+		background:rgba(2, 255, 255, 0);
+	}
+	#portfolio{
+		background:rgba(0, 0, 0, 0.1);
+	}
+	#TIL{
+		background:rgba(0, 0, 0, 0.15);
+	}
+	#contact{
+		background:rgba(0, 0, 0, 0.2);
+	}
+	.content{
+		.text{
+			padding-left:1em;
+			position:absolute;
+			width:50%;
+			bottom:40px;
+			text-decoration:none;
+			color:black;
+			letter-spacing:0.15em;
+			font-weight:700;
+			text-transform:uppercase;
+			font-size:0.7em;
+		
+			@include basic-animation(0.3s);
+		
+			h3{
+				font-size:0em;
+			}
+		}
+	}
+	
+	/*===================================
+	-----------									ABOUT
+	===================================*/
+	.about{
+		margin:0 auto;
+		width:100%;	
+		min-height:500px;
+	}
+	.facer{
+		width:60%;
+	}
+
+	.description{
+		margin:0 auto;
+		width:60%;
+		text-align:center;
+		h2{
+			font-weight:400;
+			font-size:2em;
+		}
+		h3{
+			font-weight:300;
+			font-size:0.8em;
+			color:#B5B1B4;
+		}
+	}
+	
+	/*===================================
+	----------------------		GRID CSS
+	===================================*/
+
+	.left-body{
+		width:100%;
+		position:fixed;
+		margin-top:0px;
+	
+		div{
+			margin:0 auto;
+			width:80%;
+			text-align:right;
+			padding-top:50px;
+		}
+	}
+
+	.col{
+		margin:0 auto;
+		text-align:center;
+		list-style: none;
+		width:100%;
+		position:absolute;
+		top:400px;
+		.large{
+			width:100%;
+		}
+		.medium{
+			width:100%;
+		}
+		.right{
+			left:100%;
+		}
+	
+	}
+	figcaption p{
+		letter-spacing:0;
+		text-transform:none;
+		font-size:0.7em;
+	}
+
+	.cap-bot figcaption { left: 0; bottom: -80%; padding:0;}
+	
+	/*===================================
+	----------------------		WORK NAV CSS
+	===================================*/
+	.work-nav{
+		position:fixed;
+		height:45px;
+		width:100%;
+		top:0;
+		background-color:rgba(255, 255, 255, 0.9);
+		border-bottom:1px solid #DBDBD9;
+	
+		.next, .prev{
+			position:absolute;
+			height:100%;
+			width:50%;
+			line-height:45px;
+			vertical-align:middle;
+		
+			a{
+				font-size:1em;
+			}
+	}
+}
+.work-description{
+	h1{
+		font-size:1.2em;
+	}
+}	
+
+/*===================================
+----------------------		OTHER CSS
+===================================*/
+.poster img{
+	padding:0;
+   width: 80%;
+	height:auto;
+	display:inline-block;
+}	
+.picture{
+   /* Prevent vertical gaps */
+    line-height: 0;
+	margin:0 auto;
+   -webkit-column-count: 1;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    1;
+   -moz-column-gap:      0px;
+   column-count:         1;
+   column-gap:           0px;
+}
+	
+	
+/*===================================
+-----------									CONTACT
+===================================*/ 
+
+.contact{
+	background:none;
+	color:black;
+	div{
+		height:20%;
+		width:80%;
+		padding-top:5%;
+		padding:20px;
+		background:none;
+		h2{
+			font-weight:700;
+			font-size:1em;
+			letter-spacing:0.3em;
+		}
+		h3{
+			font-weight:200;
+			font-size:0.8em;
+			opacity:0.8;
+		}
+		a{
+			color:black;
+			text-transform:uppercase;
+		}
+	}
+}
+
+/*===================================
+----------------------		NAV CSS
+===================================*/
+header{
+	position:fixed;	
+	height:45px;
+	width:100%;
+	background:black;
+	z-index:999;
+	top:0;
+	
+	@include basic-animation(0.2s);
+}
+
+.nav-up {
+    top: -45px;
+}
+
+.items{
+	position:relative;
+	margin-left:0;
+	z-index:899;
+	left:-100%;
+	
+	@include basic-animation(0.3s);
+	ul{
+		position:relative;
+		list-style:none;
+		height:45px;
+		li{
+			position:relative;
+			float:left;
+			height:100%;
+			background:white;
+
+			width:100%;
+			
+			@include basic-animation(0.3s);
+			a{
+				line-height:43px;
+			}
+		}
+	}
+}
+
+.menu-link{
+	width:45px;
+	height:45px;
+}
+
+.burger{
+	padding-top:8px;
+	padding-left:16px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  margin-top: 3px;
+  background: white;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+.bar2 {
+  margin-top: 13px;
+}
+
+.bar3 {
+  margin-top: 23px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+	
+}
+

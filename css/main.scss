@@ -1,0 +1,373 @@
+/*===================================
+----------------------		RESET CSS
+===================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background:white;
+}
+
+/*===================================
+----------------------		MIXINS
+===================================*/
+@mixin background-size($cover) {
+	-webkit-background-size: $cover;
+		-moz-background-size: $cover;
+		  -o-background-size: $cover;
+		  	  background-size: $cover;
+}
+
+@mixin basic-animation($time){
+   -webkit-transition: all $time 0 ease-in-out;
+   -moz-transition: all $time 0s ease-in-out;
+   -ms-transition: all $time 0 ease-in-out;
+   -o-transition: all $time 0 ease-in-out;
+   transition: all $time 0s ease-in-out;
+}
+
+
+
+.animate.ng-enter, 
+.animate.ng-leave {
+  -moz-transition:all .5s;
+  -o-transition:all .5s;
+  -webkit-transition:all .5s;
+  transition:all .5s;
+}
+.animate.ng-leave.animate.ng-leave-active,
+.animate.ng-enter {
+	opacity: 0;
+}
+
+.animate.ng-enter.ng-enter-active, 
+.animate.ng-leave {
+	opacity: 1;
+}
+	
+/*===================================
+----------------------		NAV CSS
+===================================*/
+header{
+	position:fixed;
+	height:75px;
+	width:100%;
+	background:none;
+	z-index:999;
+	top:0;
+	
+	@include basic-animation(0.2s);
+}
+
+.menu-link{
+	width:85px;
+	height:85px;
+	float:left;
+	background:#22A7F0;
+	position:relative;
+	z-index:999;
+}
+
+
+.nav-up {
+    top: -85px;
+}
+
+.items{
+	position:relative;
+	margin-left:75px;
+	z-index:899;
+	left:-100%;
+	
+	@include basic-animation(0.3s);
+	ul{
+		position:relative;
+		list-style:none;
+		height:85px;
+		li{
+			position:relative;
+			float:left;
+			height:100%;
+			background:#383838;
+
+			width:10%;
+			
+			@include basic-animation(0.3s);
+			a{
+				text-decoration:none;
+				color:white;
+				line-height:80px;
+				font-size:1em;
+				text-transform:uppercase;
+				position:absolute;
+				text-align:center;
+				font-weight:400;
+				letter-spacing:0.2em;
+				width:100%;
+				height:100%;
+			}
+		}
+		li:hover{
+			background:#22A7F0;
+		}
+		li:hover a{
+			color:white;
+		}
+	}
+}
+
+
+.items.active{
+	left:0;
+	
+	@include basic-animation(0.3s);
+}
+
+.burger{
+	padding-top:25px;
+	padding-left:16px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  margin-top: 0px;
+  background: white;
+  width: 50px;
+  height: 4px;
+  position: absolute;
+  
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+.bar2 {
+  margin-top: 13px;
+}
+
+.bar3 {
+  margin-top: 26px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+/*===================================
+----------------------		FOOTER CSS
+===================================*/
+footer{
+	width:100%;
+	background:black;	
+	height:100px;
+	font-weight:300;
+	text-align:center;
+	color:#C9C9C9;
+	vertical-align:bottom;
+	h3{
+		font-size:0.4em;
+		padding-top:30px;
+	}
+	p{
+		font-size:0.3em;
+	}
+}
+.wrapper{
+	width:100%;
+	background:white;
+}
+
+/*===================================
+----------------------		HOME CSS
+===================================*/
+
+.square{
+	width:100%;
+	height:100vh;	
+	position:relative;
+
+	i{
+		color:#22A7F0;
+	}
+}
+
+#portfolio{
+	background:url('../assets/images/mainface/dp2.jpg') no-repeat center top;
+	@include background-size(cover);
+}
+//uniblack/unithin
+.content{
+	position:absolute;
+	min-width:90%;
+	height:100%;
+	//background:rgba(241, 101, 41, 0.9);
+
+	bottom:10%;
+	left:10%;
+	@include basic-animation(0.3s);
+	.text{
+		padding-left:2em;
+		position:absolute;
+		width:50%;
+		bottom:40px;
+		text-decoration:none;
+		color:white;
+		letter-spacing:0.15em;
+		font-weight:700;
+		text-transform:uppercase;
+		font-size:1.5em;
+		
+		@include basic-animation(0.3s);
+		
+		h3{
+			color:gray;
+			font-weight:300;
+			letter-spacing:0.1em;
+			font-size:0.5em;
+		}
+	}
+}
+
+.box{
+	min-width:50px;
+	padding: 10px;
+	background:#22A7F0;
+	opacity: 1;
+	text-decoration:none;
+	color:white;
+	letter-spacing:0.15em;
+	font-weight:700;
+	text-transform:uppercase;
+	display:inline-block;
+}
+
+.box2{
+	text-transform:none;
+	font-weight:200;
+	font-size:0.8em;
+	letter-spacing: none;
+	background:#197BB0;
+	letter-spacing: none;
+}
+
+/*===================================
+-----------									ABOUT
+===================================*/
+.about{
+	margin:0 auto;
+	width:100%;	
+	height:400px;
+	position:relative;
+
+	background: url('../assets/images/hanur.jpg') center top no-repeat;
+	@include background-size(cover);
+
+	.box{
+		margin-left:100px;
+	}
+}
+
+.about-description{
+	margin:0 auto;
+	width:60%;
+	text-align:center;
+	h2{
+		font-weight:400;
+		font-size:2em;
+	}
+	h3{
+		font-weight:300;
+		font-size:1em;
+		color:#B5B1B4;
+	}
+	span{
+		text-align:center;
+	}
+	a{
+		color:black;
+		text-decoration:none;
+	}
+	a:hover{
+		color:gray;
+	}
+}
+
+
+/*===================================
+-----------									CONTACT
+===================================*/ 
+
+.contact{
+	background: url('../assets/images/hanur3.jpg') no-repeat center center;
+	@include background-size(cover);
+	width:100%;
+	height:100%;
+	color:white;
+	div{
+		height:100%;
+		width:20%;
+		padding:20px;
+		padding-top:5%;
+		background:rgba(0, 0, 0, 0.5);
+		h2{
+			font-weight:700;
+			font-size:1.4em;
+			letter-spacing:0.3em;
+		}
+		h3{
+			font-weight:200;
+			font-size:0.8em;
+			opacity:0.8;
+		}
+		a{
+			color:white;
+			text-transform:uppercase;
+		}
+	}
+}
+
+
+
+
+@import 'portfolio';
+@import 'mobile';
+
+
+
+
+
+
+
+
+
+
