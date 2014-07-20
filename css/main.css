@@ -59,7 +59,7 @@ body {
 header {
   position: fixed;
   height: 75px;
-  width: 100%;
+  width: 600px;
   background: none;
   z-index: 999;
   top: 0;
@@ -99,7 +99,7 @@ header {
       float: left;
       height: 100%;
       background: #383838;
-      width: 10%;
+      width: 30%;
       -webkit-transition: all 0.3s 0 ease-in-out;
       -moz-transition: all 0.3s 0s ease-in-out;
       -ms-transition: all 0.3s 0 ease-in-out;
@@ -316,7 +316,8 @@ footer {
 .body {
   width: 100%;
   background: white;
-  text-align: center; }
+  text-align: center;
+  margin-top: 85px; }
   .body h1 {
     font-size: 2em;
     padding-top: 100px;
@@ -357,7 +358,8 @@ footer {
   width: 100%;
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid #DEDEDE; }
+  border-bottom: 1px solid #DEDEDE;
+  z-index: 899; }
   .work-nav .next, .work-nav .prev {
     position: absolute;
     height: 100%;
@@ -497,26 +499,62 @@ figcaption p {
   padding: 0; }
 
 /*===================================
-----------------------		BIG IMAGE CSS
+----------------------		PORTFOLIO PAGES CSS
 ===================================*/
 .work img {
   width: 100%;
   height: auto; }
 
-.work-description a {
-  border: 2px solid black;
-  border-radius: 7px;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  -webkit-transition: all 0.2s 0 ease-in-out;
-  -moz-transition: all 0.2s 0s ease-in-out;
-  -ms-transition: all 0.2s 0 ease-in-out;
-  -o-transition: all 0.2s 0 ease-in-out;
-  transition: all 0.2s 0s ease-in-out; }
-.work-description a:hover {
-  background: black;
-  color: white; }
+.work-description {
+  width: 100%;
+  height: 600px; }
+
+.work-content {
+  position: relative;
+  float: left;
+  text-align: left;
+  padding-top: 15%;
+  padding-left: 5%; }
+
+.work-comments {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px; }
+  .work-comments .blabble {
+    width: 50%;
+    float: left; }
+  .work-comments .technology {
+    width: 50%;
+    float: right; }
+  .work-comments a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.2s 0 ease-in-out;
+    -moz-transition: all 0.2s 0s ease-in-out;
+    -ms-transition: all 0.2s 0 ease-in-out;
+    -o-transition: all 0.2s 0 ease-in-out;
+    transition: all 0.2s 0s ease-in-out; }
+  .work-comments a:hover {
+    background: black;
+    color: white; }
+
+.hiddenbg {
+  background: url("../assets/images/hidden/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.edgebg {
+  background: url("../assets/images/edge/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .edgebg .work-content {
+    float: right;
+    padding-right: 5%; }
 
 /*===================================
 ----------------------		BIG IMAGE CSS

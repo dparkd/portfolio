@@ -112,6 +112,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/edge\/4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129234,
+		"inputAbbreviatedPath": "\/assets\/images\/edge\/4.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/edge\/4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/edge\/bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129234,
+		"inputAbbreviatedPath": "\/assets\/images\/edge\/bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/edge\/bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/edge\/edge.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -123,6 +145,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/hanur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 345577,
+		"inputAbbreviatedPath": "\/assets\/images\/hanur.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/hanur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/hanur3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -130,6 +163,17 @@
 		"initialSize": 2.6751e+06,
 		"inputAbbreviatedPath": "\/assets\/images\/hanur3.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/hanur3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/hidden\/bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104563,
+		"inputAbbreviatedPath": "\/assets\/images\/hidden\/bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/hidden\/bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -635,6 +679,18 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/views\/about.html": {
 		"fileType": 8192,
