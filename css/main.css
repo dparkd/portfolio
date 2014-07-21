@@ -254,7 +254,7 @@ footer {
 .about {
   margin: 0 auto;
   width: 100%;
-  height: 400px;
+  height: 500px;
   position: relative;
   background: url("../assets/images/hanur.jpg") center top no-repeat;
   -webkit-background-size: cover;
@@ -316,8 +316,7 @@ footer {
 .body {
   width: 100%;
   background: white;
-  text-align: center;
-  margin-top: 85px; }
+  text-align: center; }
   .body h1 {
     font-size: 2em;
     padding-top: 100px;
@@ -356,7 +355,7 @@ footer {
   position: fixed;
   height: 85px;
   width: 100%;
-  top: 0;
+  bottom: 0;
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #DEDEDE;
   z-index: 899; }
@@ -413,7 +412,7 @@ footer {
   width: 100%;
   min-height: 800px;
   position: relative;
-  background: white;
+  background: none;
   margin-bottom: 100px; }
 
 #aboutwork {
@@ -517,26 +516,41 @@ figcaption p {
   padding-left: 5%; }
 
 .work-comments {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
-  padding-top: 50px; }
+  min-height: 200px;
+  padding-top: 75px; }
+  .work-comments h3 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.8em;
+    font-family: 'OpenSans'; }
+  .work-comments p {
+    color: #555;
+    font-size: 1.2em; }
   .work-comments .blabble {
     width: 50%;
-    float: left; }
+    text-align: left;
+    float: left;
+    margin-bottom: 75px; }
   .work-comments .technology {
-    width: 50%;
-    float: right; }
+    width: 40%;
+    float: right;
+    text-align: left;
+    padding-left: 10%;
+    margin-bottom: 75px; }
   .work-comments a {
-    padding: 10px;
     text-decoration: none;
-    color: black;
+    color: #22A7F0;
+    font-size: 1.5em;
+    padding: 10px;
     -webkit-transition: all 0.2s 0 ease-in-out;
     -moz-transition: all 0.2s 0s ease-in-out;
     -ms-transition: all 0.2s 0 ease-in-out;
     -o-transition: all 0.2s 0 ease-in-out;
     transition: all 0.2s 0s ease-in-out; }
   .work-comments a:hover {
-    background: black;
+    background: #22A7F0;
     color: white; }
 
 .hiddenbg {
@@ -556,16 +570,62 @@ figcaption p {
     float: right;
     padding-right: 5%; }
 
+.pictobg {
+  background: url("../assets/images/pictography/pictobg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .pictobg .work-content {
+    float: right;
+    padding-right: 5%;
+    padding-top: 20%; }
+
+.posterbg {
+  background: url("../assets/images/dailies/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.photobg {
+  background: url("../assets/images/hanur3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.mchacksbg {
+  background: url("../assets/images/mchacks/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .mchacksbg .work-content {
+    float: right;
+    padding-right: 5%; }
+
 /*===================================
 ----------------------		BIG IMAGE CSS
 ===================================*/
+.poster {
+  margin-top: 75px;
+  width: 100%;
+  margin-bottom: 75px; }
+
 .poster img {
-  padding: 20px;
-  width: 25%;
+  width: 20%;
   height: auto;
   display: inline-block; }
 
+#gif {
+  width: 25%;
+  height: auto;
+  padding-bottom: 90px; }
+
 .picture {
+  width: 100%;
+  max-height: 1400px;
   /* Prevent vertical gaps */
   line-height: 0;
   margin: 0 auto;
@@ -581,6 +641,10 @@ figcaption p {
   width: 100% !important;
   height: auto !important; }
 
+.mchacks img {
+  width: 70%;
+  height: auto; }
+
 /* TABLET */
 @media only screen and (max-width: 767px) {
   .wrapper {
@@ -588,41 +652,8 @@ figcaption p {
     width: 100%; }
 
   .square {
-    width: 100%;
-    height: 28%;
-    float: left;
-    position: relative; }
-
-  #about {
-    background: rgba(2, 255, 255, 0); }
-
-  #portfolio {
-    background: rgba(0, 0, 0, 0.1); }
-
-  #TIL {
-    background: rgba(0, 0, 0, 0.15); }
-
-  #contact {
-    background: rgba(0, 0, 0, 0.2); }
-
-  .content .text {
-    padding-left: 1em;
-    position: absolute;
-    width: 50%;
-    bottom: 40px;
-    text-decoration: none;
-    color: black;
-    letter-spacing: 0.15em;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.7em;
-    -webkit-transition: all 0.3s 0 ease-in-out;
-    -moz-transition: all 0.3s 0s ease-in-out;
-    -ms-transition: all 0.3s 0 ease-in-out;
-    -o-transition: all 0.3s 0 ease-in-out;
-    transition: all 0.3s 0s ease-in-out; }
-    .content .text h3 {
-      font-size: 0em; }
+    height: 200px;
+    float: left; }
 
   /*===================================
   -----------									ABOUT
@@ -667,6 +698,8 @@ figcaption p {
     width: 100%;
     position: absolute;
     top: 400px; }
+    .col li {
+      padding: 0; }
     .col .large {
       width: 100%; }
     .col .medium {
@@ -691,7 +724,6 @@ figcaption p {
     position: fixed;
     height: 45px;
     width: 100%;
-    top: 0;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #DBDBD9; }
     .work-nav .next, .work-nav .prev {
@@ -705,6 +737,44 @@ figcaption p {
 
   .work-description h1 {
     font-size: 1.2em; }
+
+  .work-comments {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 200px;
+    padding-top: 75px; }
+    .work-comments h3 {
+      text-transform: uppercase;
+      color: black;
+      font-size: 1.8em;
+      font-family: 'OpenSans'; }
+    .work-comments p {
+      color: #555;
+      font-size: 1.2em; }
+    .work-comments .blabble {
+      width: 100%;
+      text-align: left;
+      float: left;
+      margin-bottom: 75px; }
+    .work-comments .technology {
+      width: 100%;
+      float: right;
+      text-align: left;
+      padding-left: 10%;
+      margin-bottom: 75px; }
+    .work-comments a {
+      text-decoration: none;
+      color: #22A7F0;
+      font-size: 1.5em;
+      padding: 10px;
+      -webkit-transition: all 0.2s 0 ease-in-out;
+      -moz-transition: all 0.2s 0s ease-in-out;
+      -ms-transition: all 0.2s 0 ease-in-out;
+      -o-transition: all 0.2s 0 ease-in-out;
+      transition: all 0.2s 0s ease-in-out; }
+    .work-comments a:hover {
+      background: #22A7F0;
+      color: white; }
 
   /*===================================
   ----------------------		OTHER CSS
@@ -757,7 +827,7 @@ figcaption p {
     position: fixed;
     height: 45px;
     width: 100%;
-    background: black;
+    background: white;
     z-index: 999;
     top: 0;
     -webkit-transition: all 0.2s 0 ease-in-out;
@@ -784,18 +854,9 @@ figcaption p {
       list-style: none;
       height: 45px; }
       .items ul li {
-        position: relative;
-        float: left;
-        height: 100%;
-        background: white;
-        width: 100%;
-        -webkit-transition: all 0.3s 0 ease-in-out;
-        -moz-transition: all 0.3s 0s ease-in-out;
-        -ms-transition: all 0.3s 0 ease-in-out;
-        -o-transition: all 0.3s 0 ease-in-out;
-        transition: all 0.3s 0s ease-in-out; }
+        width: 30.8%; }
         .items ul li a {
-          line-height: 43px; }
+          line-height: 40px; }
 
   .menu-link {
     width: 45px;
@@ -803,7 +864,7 @@ figcaption p {
 
   .burger {
     padding-top: 8px;
-    padding-left: 16px; }
+    padding-left: 3px; }
 
   .bar1,
   .bar2,

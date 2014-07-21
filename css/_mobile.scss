@@ -6,44 +6,11 @@
 	}
 	
 	.square{
-		width:100%;
-		height:28%;
+		height:200px;
 		float:left;
-		position:relative;
 	}
-	#about{
-		background:rgba(2, 255, 255, 0);
-	}
-	#portfolio{
-		background:rgba(0, 0, 0, 0.1);
-	}
-	#TIL{
-		background:rgba(0, 0, 0, 0.15);
-	}
-	#contact{
-		background:rgba(0, 0, 0, 0.2);
-	}
-	.content{
-		.text{
-			padding-left:1em;
-			position:absolute;
-			width:50%;
-			bottom:40px;
-			text-decoration:none;
-			color:black;
-			letter-spacing:0.15em;
-			font-weight:700;
-			text-transform:uppercase;
-			font-size:0.7em;
+
 		
-			@include basic-animation(0.3s);
-		
-			h3{
-				font-size:0em;
-			}
-		}
-	}
-	
 	/*===================================
 	-----------									ABOUT
 	===================================*/
@@ -95,6 +62,9 @@
 		width:100%;
 		position:absolute;
 		top:400px;
+		li{
+			padding:0;
+		}
 		.large{
 			width:100%;
 		}
@@ -121,7 +91,6 @@
 		position:fixed;
 		height:45px;
 		width:100%;
-		top:0;
 		background-color:rgba(255, 255, 255, 0.9);
 		border-bottom:1px solid #DBDBD9;
 	
@@ -142,6 +111,49 @@
 		font-size:1.2em;
 	}
 }	
+
+.work-comments{
+	width:80%;
+	margin:0 auto;
+	min-height:200px;
+	padding-top:75px;
+
+	h3{
+		text-transform:uppercase;
+		color:black;
+		font-size:1.8em;
+		font-family:'OpenSans';
+	}
+	p{
+		color:#555;
+		font-size:1.2em;
+	}
+	.blabble{
+		width:100%;
+		text-align:left;
+		float:left;
+		margin-bottom:75px;
+	}
+	.technology{
+		width:100%;
+		float:right;
+		text-align:left;
+		padding-left:10%;
+		margin-bottom:75px;
+	}
+	a{
+		text-decoration:none;
+		color:#22A7F0;
+		font-size:1.5em;
+		padding:10px;
+	
+		@include basic-animation(0.2s);
+	}
+	a:hover{
+		background:#22A7F0;
+		color:white;
+	}
+}
 
 /*===================================
 ----------------------		OTHER CSS
@@ -202,7 +214,7 @@ header{
 	position:fixed;	
 	height:45px;
 	width:100%;
-	background:black;
+	background:white;
 	z-index:999;
 	top:0;
 	
@@ -225,16 +237,9 @@ header{
 		list-style:none;
 		height:45px;
 		li{
-			position:relative;
-			float:left;
-			height:100%;
-			background:white;
-
-			width:100%;
-			
-			@include basic-animation(0.3s);
+			width:30.8%;
 			a{
-				line-height:43px;
+				line-height:40px;
 			}
 		}
 	}
@@ -247,7 +252,7 @@ header{
 
 .burger{
 	padding-top:8px;
-	padding-left:16px;
+	padding-left:3px;
 }
 .bar1,
 .bar2,

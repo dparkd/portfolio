@@ -3,7 +3,6 @@
 	width:100%;
 	background:white;
 	text-align:center;
-	margin-top:85px;
 	h1{
 		font-size:2em;
 		padding-top:100px;
@@ -56,7 +55,7 @@
 	position:fixed;
 	height:85px;
 	width:100%;
-	top:0;
+	bottom:0;
 	background-color:rgba(255, 255, 255, 0.9);
 	border-bottom:1px solid #DEDEDE;
 	z-index: 899;
@@ -132,7 +131,7 @@
 	width:100%;
 	min-height:800px;
 	position:relative;
-	background:white;
+	background:none;
 	margin-bottom:100px;
 }
 
@@ -249,26 +248,44 @@ figcaption p{
 }
 
 .work-comments{
-	width:80%;
+	width:60%;
 	margin:0 auto;
-	padding-top:50px;
+	min-height:200px;
+	padding-top:75px;
+
+	h3{
+		text-transform:uppercase;
+		color:black;
+		font-size:1.8em;
+		font-family:'OpenSans';
+	}
+	p{
+		color:#555;
+		font-size:1.2em;
+	}
 	.blabble{
 		width:50%;
+		text-align:left;
 		float:left;
+		margin-bottom:75px;
 	}
 	.technology{
-		width:50%;
+		width:40%;
 		float:right;
+		text-align:left;
+		padding-left:10%;
+		margin-bottom:75px;
 	}
 	a{
-		padding:10px;
 		text-decoration:none;
-		color:black;
+		color:#22A7F0;
+		font-size:1.5em;
+		padding:10px;
 	
 		@include basic-animation(0.2s);
 	}
 	a:hover{
-		background:black;
+		background:#22A7F0;
 		color:white;
 	}
 }
@@ -288,22 +305,62 @@ figcaption p{
 	}
 }
 
+.pictobg{
+	background:url('../assets/images/pictography/pictobg.jpg') no-repeat center center fixed;
+	@include background-size(cover);
+
+	.work-content{
+		float:right;
+		padding-right:5%;
+		padding-top:20%;
+	}
+}
+.posterbg{
+	background:url('../assets/images/dailies/bg.jpg') no-repeat center center fixed;
+	@include background-size(cover);
+}
+
+.photobg{
+	background:url('../assets/images/hanur3.jpg') no-repeat center center fixed;
+	@include background-size(cover);
+}
+
+.mchacksbg{
+	background:url('../assets/images/mchacks/bg.jpg') no-repeat center center fixed;
+	@include background-size(cover);
+	.work-content{
+		float:right;
+		padding-right:5%;
+	}
+}
 
 
 /*===================================
 ----------------------		BIG IMAGE CSS
 ===================================*/
+.poster{
+	margin-top:75px;
+	width:100%;
+	margin-bottom:75px;
+}
 .poster img{
-	padding:20px;
-   width: 25%;
+  width: 20%;
 	height:auto;
 	display:inline-block;
 }
 
+#gif{
+	width:25%;
+	height:auto;
+	padding-bottom:90px;
+}
+
 .picture{
+	width:100%;
+	max-height:1400px;
    /* Prevent vertical gaps */
     line-height: 0;
-	margin:0 auto;
+		margin:0 auto;
    -webkit-column-count: 4;
    -webkit-column-gap:   0px;
    -moz-column-count:    5;
@@ -318,6 +375,10 @@ figcaption p{
    height: auto !important;
 }
 
+.mchacks img{
+	width:70%;
+	height:auto;
+}
 
 
 
