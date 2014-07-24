@@ -117,12 +117,12 @@
 	margin:0 auto;
 	min-height:200px;
 	padding-top:75px;
+	font-family:"Open Sans", sans-serif;
 
 	h3{
 		text-transform:uppercase;
 		color:black;
 		font-size:1.8em;
-		font-family:'OpenSans';
 	}
 	p{
 		color:#555;
@@ -222,7 +222,7 @@ header{
 }
 
 .nav-up {
-    top: -45px;
+    top: 0px;
 }
 
 .items{
@@ -280,7 +280,16 @@ header{
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
+}
 
-	
+
+@media only screen and (max-width: 480px) {
+.hiddenbg, .edgebg, .pictobg, .posterbg, .photobg, .mchacksbg, .beaconbg{
+background-attachment: scroll;
+	-webkit-background-size:100% auto;
+		-moz-background-size: 100% auto;
+		  -o-background-size: 100% auto;
+		  	  background-size: 100% auto;
+}
 }
 

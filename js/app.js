@@ -12,6 +12,7 @@ var app = angular.module('dparkd',['ngAnimate','ngRoute']).
 			when('/TIL', {templateUrl:'views/til.html'}).
 			when('/contact', {templateUrl:'views/contact.html'}).
 			when('/mchacks', {templateUrl:'views/mchacks.html'}).
+			when('/beacon', {templateUrl:'views/beacon.html'}).
 			otherwise({redirectTo:'/', templateUrl:'views/home.html'});
 			
 			

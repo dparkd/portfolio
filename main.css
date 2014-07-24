@@ -322,7 +322,8 @@ footer {
 .body {
   width: 100%;
   background: white;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Open Sans'; }
   .body h1 {
     font-size: 2em;
     padding-top: 100px;
@@ -332,8 +333,7 @@ footer {
   .body h3 {
     font-size: 1em;
     font-weight: 300;
-    color: gray;
-    font-family: 'EB Garamond', serif; }
+    color: gray; }
 
 .work-body {
   width: 100%;
@@ -351,8 +351,7 @@ footer {
   .work-description h3 {
     font-size: 1em;
     font-weight: 300;
-    color: gray;
-    font-family: 'EB Garamond', serif; }
+    color: gray; }
 
 /*===================================
 ----------------------		SIDE BARS CSS
@@ -755,12 +754,12 @@ figcaption p {
     width: 80%;
     margin: 0 auto;
     min-height: 200px;
-    padding-top: 75px; }
+    padding-top: 75px;
+    font-family: "Open Sans", sans-serif; }
     .work-comments h3 {
       text-transform: uppercase;
       color: black;
-      font-size: 1.8em;
-      font-family: 'Open Sans'; }
+      font-size: 1.8em; }
     .work-comments p {
       color: #555;
       font-size: 1.2em; }
@@ -901,3 +900,10 @@ figcaption p {
     transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg); } }
+@media only screen and (max-width: 480px) {
+  .hiddenbg, .edgebg, .pictobg, .posterbg, .photobg, .mchacksbg, .beaconbg {
+    background-attachment: scroll;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto; } }

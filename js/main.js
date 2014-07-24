@@ -32,6 +32,13 @@ $('.menu-link').click(function(){
    console.log("Togged Up");
   }
 });
+
+$("#gotoport").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#iamport").offset().top
+    }, 2000);
+});
+
 });
 
 
