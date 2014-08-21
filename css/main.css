@@ -322,7 +322,8 @@ footer {
 .body {
   width: 100%;
   background: white;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Open Sans'; }
   .body h1 {
     font-size: 2em;
     padding-top: 100px;
@@ -332,8 +333,7 @@ footer {
   .body h3 {
     font-size: 1em;
     font-weight: 300;
-    color: gray;
-    font-family: 'EB Garamond', serif; }
+    color: gray; }
 
 .work-body {
   width: 100%;
@@ -351,8 +351,7 @@ footer {
   .work-description h3 {
     font-size: 1em;
     font-weight: 300;
-    color: gray;
-    font-family: 'EB Garamond', serif; }
+    color: gray; }
 
 /*===================================
 ----------------------		SIDE BARS CSS
@@ -432,7 +431,7 @@ footer {
   margin: 0 auto;
   text-align: center;
   list-style: none;
-  width: 80%;
+  width: 100%;
   min-height: 700px;
   background: white; }
   .col li {
@@ -444,7 +443,7 @@ footer {
     -o-box-sizing: border-box;
     overflow: hidden;
     position: relative;
-    padding: 10px; }
+    padding: 0px; }
     .col li img {
       width: 100%;
       height: auto;
@@ -452,11 +451,11 @@ footer {
       outline: none;
       vertical-align: bottom; }
   .col .large {
-    width: 33.3%; }
+    width: 25%; }
   .col .medium {
-    width: 33.3%; }
+    width: 25%; }
   .col .right {
-    left: 33.3%; }
+    left: 25%; }
 
 figure {
   display: block;
@@ -512,7 +511,7 @@ figcaption p {
 
 .work-description {
   width: 100%;
-  height: 600px; }
+  height: 800px; }
 
 .work-content {
   position: relative;
@@ -558,6 +557,13 @@ figcaption p {
   .work-comments a:hover {
     background: #22A7F0;
     color: white; }
+
+.whiteboardbg {
+  background: url("../assets/images/whiteboard/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .hiddenbg {
   background: url("../assets/images/hidden/bg.jpg") no-repeat center center fixed;
@@ -658,6 +664,10 @@ figcaption p {
   width: 70%;
   height: auto; }
 
+.whiteboards img {
+  width: 70%;
+  height: auto; }
+
 /* TABLET */
 @media only screen and (max-width: 767px) {
   .wrapper {
@@ -755,12 +765,12 @@ figcaption p {
     width: 80%;
     margin: 0 auto;
     min-height: 200px;
-    padding-top: 75px; }
+    padding-top: 75px;
+    font-family: "Open Sans", sans-serif; }
     .work-comments h3 {
       text-transform: uppercase;
       color: black;
-      font-size: 1.8em;
-      font-family: 'Open Sans'; }
+      font-size: 1.8em; }
     .work-comments p {
       color: #555;
       font-size: 1.2em; }
@@ -901,3 +911,10 @@ figcaption p {
     transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg); } }
+@media only screen and (max-width: 480px) {
+  .hiddenbg, .edgebg, .pictobg, .posterbg, .photobg, .mchacksbg, .beaconbg {
+    background-attachment: scroll;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto; } }

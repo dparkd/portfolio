@@ -146,7 +146,7 @@
 	margin:0 auto;
 	text-align:center;
 	list-style: none;
-	width:80%;
+	width:100%;
 	min-height:700px;
 	background:white;
 	li{
@@ -158,7 +158,7 @@
 		-o-box-sizing: border-box;
 		overflow:hidden;
 		position:relative;
-		padding:10px;
+		padding:0px;
 		img{
 			width: 100%;
 			height:auto;
@@ -168,13 +168,13 @@
 		}
 	}
 	.large{
-		width:33.3%;
+		width:25%;
 	}
 	.medium{
-		width:33.3%;
+		width:25%;
 	}
 	.right{
-		left:33.3%;
+		left:25%;
 	}
 	
 }
@@ -235,7 +235,7 @@ figcaption p{
 
 .work-description{ 
 	width:100%;
-	height:600px;
+	height:800px;
 }
 
 .work-content{
@@ -289,7 +289,10 @@ figcaption p{
 	}
 }
 
-
+.whiteboardbg{
+	background:url('../assets/images/whiteboard/bg.jpg') no-repeat center center fixed;
+	@include background-size(cover);
+}
 .hiddenbg{
 	background:url('../assets/images/hidden/bg.jpg') no-repeat center center fixed;
 	@include background-size(cover);
@@ -383,6 +386,10 @@ figcaption p{
 	height:auto;
 }
 
+.whiteboards img{
+	width:70%;
+	height:auto;
+}
 
 
 
